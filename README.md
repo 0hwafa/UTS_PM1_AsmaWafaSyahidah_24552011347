@@ -33,6 +33,8 @@ Sesuai dengan ketentuan soal UTS:
 ## Link Video Penjelasan
 Berikut adalah link video penjelasan kode dan demonstrasi aplikasi (sesuai instruksi pengumpulan):
 * **Link Video:** 
+* https://youtu.be/lYEcsiDbS94?si=5DSPI9WklluVUjwd
+  
 
 ## Teknologi yang Digunakan
 * **Bahasa:** Java

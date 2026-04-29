@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_succes">
+
+    <LinearLayout
+        android:id="@+id/headerSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivHomeSuccess"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/white_house"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:layout_constraintTop_toBottomOf="@id/headerSuccess"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dongle_bold"
+                android:gravity="center"
+                android:text="You Have\nSuccessfully Registered!"
+                android:textColor="#A06E7E"
+                android:textSize="38sp"
+                android:lineSpacingExtra="-10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/dongle_bold"
+                android:text="Thank You For Registering,\nStay Tuned For The Event ~"
+                android:gravity="center"
+                android:textColor="#3D563D"
+                android:textSize="18sp"
+                android:lineSpacingExtra="-5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/dongle_bold"
+                android:text="#0001"
+                android:textColor="#A06E7E"
+                android:textSize="45sp" />
+
+            <TextView
+                android:id="@+id/tvResultName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dongle_bold"
+                android:text="Name"
+                android:textColor="#A06E7E"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tvResultEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dongle_bold"
+                android:text="Email"
+                android:textColor="#A06E7E"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tvResultPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dongle_bold"
+                android:text="08xxxx-xxx"
+                android:textColor="#A06E7E"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tvResultGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dongle_bold"
+                android:text="Gender"
+                android:textColor="#A06E7E"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tvResultSeminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/dongle_bold"
+                android:gravity="center"
+                android:text="Seminar Title Goes Here"
+                android:textColor="#3D563D"
+                android:textSize="22sp"
+                android:lineSpacingExtra="-5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBackHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_grad_button"
+                android:fontFamily="@font/dongle_bold"
+                android:text="Back to Home Page"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

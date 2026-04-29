@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_loginregist">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#A06E7E"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/white_house"
+            android:contentDescription="Back to Home"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/dongle_bold"
+            android:gravity="center"
+            android:text="BioTech Seminar Hub"
+            android:textColor="@android:color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dongle_bold"
+                    android:includeFontPadding="false"
+                    android:text="Seminar Registration"
+                    android:textColor="#A06E7E"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/dongle_bold"
+                    android:text="Full Name"
+                    android:textColor="#314C2C"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_submitregist"
+                    android:fontFamily="@font/dongle_bold"
+                    android:paddingHorizontal="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/dongle_bold"
+                    android:text="Email"
+                    android:textColor="#314C2C"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_submitregist"
+                    android:fontFamily="@font/dongle_bold"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/dongle_bold"
+                    android:text="Phone Number"
+                    android:textColor="#314C2C"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_submitregist"
+                    android:fontFamily="@font/dongle_bold"
+                    android:inputType="phone"
+                    android:paddingHorizontal="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/dongle_bold"
+                    android:text="Gender"
+                    android:textColor="#314C2C"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dongle_bold"
+                        android:includeFontPadding="false"
+                        android:text="Male"
+                        android:textColor="#314C2C"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/dongle_bold"
+                        android:includeFontPadding="false"
+                        android:text="Female"
+                        android:textColor="#314C2C"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/dongle_bold"
+                    android:text="Select Seminar"
+                    android:textColor="#314C2C"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/spSeminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_gradient_card" />
+
+                <CheckBox
+                    android:id="@+id/cbAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dongle_bold"
+                    android:text="I agree that the data entered is correct"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="220dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_grad_button"
+                    android:fontFamily="@font/dongle_bold"
+                    android:includeFontPadding="false"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="35sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

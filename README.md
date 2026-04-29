@@ -14,6 +14,9 @@
 ## Latar Belakang
 Aplikasi ini hadir dengan tema bioteknologi untuk memberikan pengalaman pengguna yang lebih spesifik. Dengan visual yang terinspirasi dari alam menggunakan gradasi hijau (berdasarkan desain Figma), aplikasi ini mencerminkan konsep *Green Technology*. Pengguna dapat mendaftarkan diri pada berbagai seminar teknis seperti *Bio-informatics*, *Smart Farming*, hingga *Genetic Engineering*.
 
+## Design UI menggunakan FIGMA
+<img width="1902" height="1008" alt="image" src="https://github.com/user-attachments/assets/d1b5a0bb-319c-4b26-add1-e2a9469b97a6" />
+
 ## Fitur Utama & Ketentuan UTS
 Sesuai dengan ketentuan soal UTS:
 1. **Autentikasi User**: Fitur Login dan Register sebagai alur masuk aplikasi.
